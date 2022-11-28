@@ -1,5 +1,4 @@
-Win
-Reduce the turns
+Win \n Reduce the turns
 Figure
 The figure die
 
