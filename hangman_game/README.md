@@ -1,7 +1,3 @@
-Win \n Reduce the turns
-Figure
-The figure die
-
 Algorithm
 1. Develop the interface
 2. Predefined list
