@@ -1,7 +1,10 @@
 import random
-
+import json
+data = json.load(open("data.json"))
 def hangman():
-    word = random.choice(["pugger", "tiger", "thor", "superman", "pokemon", "earth"])
+    lists = list(data.keys())
+    word = random.choice(lists)
+    #word = random.choice(["pugger", "tiger", "thor", "superman", "pokemon", "earth"])
     valid_letters = "abcdefghijklmnopqrstuvwxyz"
     turns = 10
     guessmade = ''
