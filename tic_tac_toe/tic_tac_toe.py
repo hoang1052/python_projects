@@ -120,7 +120,7 @@ def main():
             playerMove()
             printBoard()
         else:
-            print('O\\\'s win this time...')
+            print('O\'s win this time...')
             break
  
        
@@ -130,10 +130,10 @@ def main():
                 print('Game is a Tie! No more spaces left to move.')
             else:
                 insertBoard('O', move)
-                print('Computer placed an \\\'O\\\' in position\', move, \':')
+                print('Computer placed an \'O\' in position', move, ':')
                 printBoard()
         else:
-            print('X\\\'s win, good job!')
+            print('X\'s win, good job!')
             break
  
  
