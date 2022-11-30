@@ -1,9 +1,9 @@
-import random 
+import random
 print("This is a dice stimulator")
 x = "y"
 while x == "y":
-    number = random.randint(1,6)
-    if(number==1):
+    number = random.randint(1, 6)
+    if (number == 1):
         print("----------")
         print("|        |")
         print("|    O   |")
