@@ -13,6 +13,25 @@ sympol_count = {
     "D": 8
 }
 
+sympol_value = {
+    "A": 5,
+    "B": 4,
+    "C": 3,
+    "D": 2
+}
+
+def check_winnings(columns, lines, bet, values):
+    winnings = 0
+    for line in range(lines):                           #loop through rows
+        sympol = columns[0][line]                       #we want to check is whatever symbol is in the first column of the current row because all of the symbols need to be the same
+        for column in columns:                          #loop through every single column
+            sympol_to_check = column[line]              #he symbol to check is equal to the column at the current row that we are looking at
+            if sympol != sympol_to_check:
+                break
+            else: 
+                winnings += values[sympol] * bet        #bet is bet on each line   
+    return winnings
+
 def get_slot_machine_spin(rows, cols, sympols):
     all_sympols = []
     for sympol, sympol_count in sympols.items():       #items in dictionary = key + value
