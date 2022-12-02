@@ -19,20 +19,18 @@ while True:
     user_guess = input("Make a guess: ")
     if user_guess.isdigit():
         user_guess = int(user_guess)
-        
-        if user_guess == random_number:
-            print("You got it!")
-            break
-        elif user_guess > random_number:
-            print("You were above the number")
-            continue
-        else:
-            print("You were below the number")
-            continue
     else:
         print("Please type a number")
         continue
     
+    if user_guess == random_number:
+        print("You got it!")
+        break
+    elif user_guess > random_number:
+        print("You were above the number")
+    else:
+        print("You were below the number")
+        
            
 print("You got it in ", guesses, " guesses")
         
