@@ -1,16 +1,23 @@
 import random
+#def check_input():
+#check = True
 
-top_of_range = input("Type a range of number to guess: ")
 
-if top_of_range.isdigit():
-    top_of_range = int(top_of_range)
-    if top_of_range <= 0:
-        print("Please type a number larger than 0 next time")
-        quit()
-else:
-    print("Please type a number")
-    quit()
-    
+while True:
+    try:
+        top_of_range = input("Type a number: ")
+        top_of_range = int(top_of_range)
+        if top_of_range > 0:
+            break
+        else :
+            print('Please type a number larger than 0 next time.')
+            
+    except:
+        print('Please type a number next time.')
+        
+        
+ 
+
 random_number = random.randint(0, top_of_range)
 guesses = 0
 
@@ -27,7 +34,7 @@ while True:
         print("You got it!")
         break
     elif user_guess > random_number:
-        print("You were above the number")
+        print("You were above the number")   
     else:
         print("You were below the number")
         
