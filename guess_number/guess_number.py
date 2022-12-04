@@ -1,7 +1,4 @@
 import random
-#def check_input():
-#check = True
-
 
 while True:
     try:
